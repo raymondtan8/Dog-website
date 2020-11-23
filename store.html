@@ -1,0 +1,131 @@
+<!--
+HTML: Store page
+Author: Raymond Tan
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website dedicated to Vega.">
+        <title>Vega | About</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1 class="title title-large">Vega's World</h1>
+        </header>
+        <section class="container content-section"> <!--Photo section -->
+            <h2 class="section-header">PHOTOS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Photo 1</span>
+                    <img class="shop-item-image" src="vega photos/Laying down.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$7.99</span>
+                        <button class="btn btn-primary shop-item-btn" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Photo 2</span>
+                    <img class="shop-item-image" src="vega photos/Mercedes.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$4.99</span>
+                        <button class="btn btn-primary shop-item-btn" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Photo 3</span>
+                    <img class="shop-item-image" src="vega photos/Starbucks.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-btn" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Photo 4</span>
+                    <img class="shop-item-image" src="vega photos/Lick.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$3.99</span>
+                        <button class="btn btn-primary shop-item-btn" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section"> <!-- Petting section -->
+            <h2 class="section-header">PETTING SESSIONS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">1 hour</span>
+                    <img class="shop-item-image" src="vega photos/Petting.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$29.99</span>
+                        <button class="btn btn-primary shop-item-btn" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">1 hour 30 mins</span>
+                    <img class="shop-item-image" src="vega photos/Petting.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$39.99</span>
+                        <button class="btn btn-primary shop-item-btn" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section"> <!-- Cart -->
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row"> <!-- Header of cart -->
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="vega photos/Petting.jpeg" height=100 width=100>
+                    <span class="cart-item-title">Petting session -- 1 Hour</span>
+                </div>
+                <span class="cart-price cart-column">$29.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" role="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="vega photos/Starbucks.jpeg" height=100 width=100>
+                    <span class="cart-item-title">Photo 3</span>
+                </div>
+                <span class="cart-price cart-column">$9.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" role="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-total">
+                <span class="cart-total-title">Total</span>
+                <span class="cart-total-price">$49.97</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+            <div class="footer-items">
+                <h4 class="title title-small">Vega's World</h4>
+                <ul class="footer-list">
+                    <li>Based in Tracy, California</li>
+                    <li>Owner's Instagram: <a href="https://www.instagram.com/raymond__tan/" target="_blank">@raymond__tan</a></li>
+                    <li><a href="https://paypal.me/raymondtan12?locale.x=en_US" target="_blank">Donate to us</a></li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
