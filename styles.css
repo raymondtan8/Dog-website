@@ -308,20 +308,46 @@ input::placeholder {
     margin-right: 25px;
 }
 
-.cart-total {
+.cart-end {
     text-align: end;
     margin-right: 10px;
 }
 
-.cart-total-title {
+.cart-end-title {
     font-weight: bold;
     font-size: 1.5em;
     margin-right: 20px;
 }
 
-.cart-total-price {
+.cart-end-price {
     font-size: 1.1em;
 }
+
+.cart-total-title {
+    font-size: 2em;
+    color: #0B8131;
+}
+
+.cart-total-price {
+    font-size: 2em;
+    color: #0B8131;
+}
+/*
+.cart-subtotal {
+    text-align: end;
+    margin-right: 10px;
+}
+
+.cart-subtotal-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.cart-subtotal-price {
+    font-size: 1.1em;
+}
+*/
 
 .btn-purchase {
     display: block;

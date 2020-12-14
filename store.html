@@ -93,9 +93,9 @@ Author: Raymond Tan
                     <img class="cart-item-image" src="vega photos/Petting.jpeg" height=100 width=100>
                     <span class="cart-item-title">Petting session -- 1 Hour</span>
                 </div>
-                <span class="cart-price cart-column">$29.99</span>
+                <span class="cart-price cart-column" id="first-price">$29.99</span>
                 <div class="cart-quantity cart-column">
-                    <input class="cart-quantity-input" type="number" value="1">
+                    <input class="cart-quantity-input" type="number" value="1" min=0 id="input-1">
                     <button class="btn btn-danger" role="button">REMOVE</button>
                 </div>
             </div>
@@ -104,15 +104,23 @@ Author: Raymond Tan
                     <img class="cart-item-image" src="vega photos/Starbucks.jpeg" height=100 width=100>
                     <span class="cart-item-title">Photo 3</span>
                 </div>
-                <span class="cart-price cart-column">$9.99</span>
+                <span class="cart-price cart-column" id="second-price">$9.99</span>
                 <div class="cart-quantity cart-column">
-                    <input class="cart-quantity-input" type="number" value="2">
+                    <input class="cart-quantity-input" type="number" value="1" min=0 id="input-2">
                     <button class="btn btn-danger" role="button">REMOVE</button>
                 </div>
             </div>
-            <div class="cart-total">
-                <span class="cart-total-title">Total</span>
-                <span class="cart-total-price">$49.97</span>
+            <div class="cart-end cart-subtotal">
+                <span class="cart-end-title cart-subtotal-title">Subtotal</span>
+                <span class="cart-end-price cart-subtotal-price" id="cart-subtotal-price">$39.98</span>
+            </div>
+            <div class="cart-end cart-tax">
+                <span class="cart-end-title">Tax (8%)</span>
+                <span class="cart-end-price" id="cart-tax-price">$3.20</span>
+            </div>
+            <div class="cart-end cart-total">
+                <span class="cart-end-title cart-total-title">Total</span>
+                <span class="cart-end-price cart-total-title" id="cart-total-price">$43.18</span>
             </div>
             <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
         </section>
@@ -123,9 +131,10 @@ Author: Raymond Tan
                     <li>Based in Tracy, California</li>
                     <li>Owner's Instagram: <a href="https://www.instagram.com/raymond__tan/" target="_blank">@raymond__tan</a></li>
                     <li><a href="https://paypal.me/raymondtan12?locale.x=en_US" target="_blank">Donate to us</a></li>
-                    <li>Github</li>
+                    <li><a href ="https://github.com/raymondtan8/Dog-website" target="_blank">Github</a></li>
                 </ul>
             </div>
         </footer>
+        <script src="store.js" charset="UTF-8"></script>
     </body>
 </html>
