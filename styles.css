@@ -11,12 +11,12 @@ AUTHOR: RAYMOND TAN
 * {
     box-sizing: border-box;
     font-family: Noto Sans JP;
-    /*color: #777;*/
 }
 
 html, body {
     margin: 40;
     padding: 40;
+    background-color: #F0FFFF;
 }
 
 a {
@@ -79,7 +79,8 @@ input::placeholder {
     font-size: 1.1em;
     font-weight: lighter;
     border-bottom: 2px solid rgba(255, 255, 255, .3);
-    background-color: #DCDCDC;
+    /*background-color: #DCDCDC;*/
+    background-color: #D3D3D3;
 }
 
 .main-nav li {
@@ -103,32 +104,36 @@ input::placeholder {
 .main-header {
     /*background-color: rgba(0, 0, 0, .6);*/
     /*background-blend-mode: multiply;*/
-    background-image: url("vega photos/Bone.jpeg");
+    background-image: url("vega photos/walk.jpeg");
     background-size: cover;
     padding-bottom: 170px;
-    background-position: 10% 40%;
+    background-position: 30% 10%;
 }
+
 
 .home-header {
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 
+
+
 .btn-header {
-    margin: 50px;
-    background-color: #FFA500;
-    border: 5px solid black;
+    margin: 20px;
+    background-color: #FFFFE0;
+    border: 3px solid black;
     font-size: 1.1em;
     border-radius: .3em;
+    padding: 0.9em;
 }
 
 .btn-header:hover {
-    background-color: #FF8C00;
+    background-color: #FFE4B5;
 }
 
 /*******FOOTER*******/
 
 .main-footer {
-    background-color: #DCDCDC;
+    background-color: #D3D3D3;
     color: black;
     padding: .25em 0;
 }
@@ -161,6 +166,7 @@ input::placeholder {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
+   /*background-color: #F0FFFF;*/
 }
 
 .section-header {
@@ -199,13 +205,33 @@ input::placeholder {
     max-width: 19%;
 }
 
+.home-container {
+    background-color: #FFB6C1;
+    border: 10px solid #FFFFE0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 /*******ABOUT*******/
 
 .about-image {
     float: left;
-    margin: 20px;
-    /*padding-bottom: 100px;*/
+    margin: 30px;
+    padding: 30px;
     border-radius: 50%;
+}
+
+.about-container {
+    background-color: #FFB6C1;
+    border: 10px solid #FFFFE0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+.about-paragraph {
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 /*******STORE*******/
@@ -236,6 +262,7 @@ input::placeholder {
 
 .shop-item-price {
     flex-grow: 1;
+    font-size: 1.3em;
 }
 
 .shop-items {
@@ -388,9 +415,16 @@ input::placeholder {
     padding-bottom: 100px;
 }
 
+.contact-container {
+    background-color: #FFB6C1;
+    border: 10px solid #FFFFE0;
+    margin-bottom: 1.2em;
+    padding: 0.4em 1.5em 0.8em 1.5em;
+}
+
 .btn-submit {
-    font-size: 1em;
-    margin-left: 700px;
+    font-size: 1.2em;
+    margin-left: 730px;
     margin-bottom: 40px;
     background-color: #90EE90;
 }
