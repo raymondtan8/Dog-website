@@ -15,7 +15,8 @@ const secondPriceInput_input = document.getElementById("input-2");
 const subtotal_span = document.getElementById("cart-subtotal-price");
 const tax_span = document.getElementById("cart-tax-price");
 const total_span = document.getElementById("cart-total-price");
-
+const purchase_btn = document.getElementById("purchase-btn");
+const processing_p = document.getElementById("processing");
 
 const firstPriceVal = changeToFloat(firstPrice_span);
 const secondPriceVal = changeToFloat(secondPrice_span);
@@ -26,7 +27,12 @@ function testFunction(num){
     firstPrice_span.innerHTML = num;
 }
 */
+const processingDisplay = processing_p.style.display;
+processing_p.style.display = "none";
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 function action(key){
     // Just using a switch statement for practice
@@ -84,9 +90,17 @@ function changeToFloat(element){
     return parseFloat(element.innerHTML.replace("$", ""));
 }
 
+async function loading(button){
+    button.style.display = "none";
+    processing_p.style.display = processingDisplay;
+    await sleep(2000);
+    window.location.replace("thankyou.html");
+}
+
 function main(){
     firstPriceInput_input.addEventListener("input", () => action("first"))
     secondPriceInput_input.addEventListener("input", () => action("second"));
+    purchase_btn.addEventListener("click", () => loading(purchase_btn));
 }
 
 main();
